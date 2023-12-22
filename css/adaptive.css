@@ -1,0 +1,217 @@
+@media (min-width: 320px) and (max-width: 1200px) {
+    header {
+        display: none;
+    }
+
+    .mainBlock {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .mainBlock_left {
+        height: auto;
+        width: 100%;
+    }
+
+    .mainBlock_right {
+        width: 100%;
+        position: relative;
+    }
+
+    .mainBlock_right img {
+        width: 100%;
+    }
+
+
+    .mainBlock_left__title {
+        font-size: 60px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .mainBlock_left__list {
+        display: none;
+    }
+
+    .mainBlock_left__button {
+        display: none;
+    }
+
+    .professional-level_section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .professional-level_section_left {
+        padding: 20px 10px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .professional-level_section_left h1 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .professional-level_section_right {
+        width: 100%;
+    }
+
+    .professional-level_section_left_info_card_list {
+        margin-top: 30px;
+    }
+
+    .professional-level_section_left_info_card p {
+        font-size: 14px;
+    }
+
+    .advantagesWorkingWithMe_section {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .advantagesWorkingWithMe_section h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .advantagesWorkingWithMe_section_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advantagesWorkingWithMe_section_table_card {
+        width: 100%;
+    }
+
+    .advantagesWorkingWithMe_section_table_card h2 {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .advantagesWorkingWithMe_section_table_card p {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .rigth-bottom h2 {
+        width: auto;
+    }
+
+    .advantagesWorkingWithMe_section_table {
+        gap: 20px;
+    }
+
+    .myGallery {
+        padding: 0px 10px 20px;
+        gap: 20px;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    .gallery {
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer_right__img {
+        width: 50%;
+    }
+
+    .footer_right__img img {
+        width: 100%;
+    }
+
+    .footer_left ul {
+        gap: 10px;
+    }
+
+    .footer_left ul li {
+        text-align: center;
+    }
+
+    .contacts_section {
+        padding: 20px 10px;
+    }
+
+    .contacts_section h1 {
+        font-size: 30px;
+    }
+
+    .footer_left ul li a {
+        font-size: 14px;
+    }
+
+    .mySlides {
+        width: 80%;
+        height: auto;
+    }
+
+    .mySlides img {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 0px;
+    }
+
+    .item:nth-child(3),
+    .item:nth-child(4) {
+        opacity: 0;
+    }
+
+    .buttons {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
+    .eventText {
+        position: unset;
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .eventText_title {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .eventText_nums ul li {
+        font-size: 14px;
+    }
+
+    .eventText_nums ul li div:nth-child(1) {
+        width: 12%;
+    }
+
+    .eventText_nums ul li div:nth-child(2) {
+        width: 82%;
+    }
+
+    .eventText_nums ul {
+        gap: 10px;
+    }
+
+    .goToVK {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .contacts_section p {
+        font-size: 14px;
+    }
+}

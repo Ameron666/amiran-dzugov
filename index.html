@@ -18,16 +18,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">ГЛАВНАЯ</a></li>
-                <li><a href="index.html">МЕРОПРИЯТИЯ</a></li>
-                <li><a href="index.html">ПРОФЕССИОНАЛЬНЫЙ УРОВЕНЬ</a></li>
-                <li><a href="index.html">СОТРУДНИЧЕСТВО</a></li>
-                <li><a href="index.html">КОНТАКТЫ</a></li>
+                <li><a href="#main">ГЛАВНАЯ</a></li>
+                <li><a href="#events">МЕРОПРИЯТИЯ</a></li>
+                <li><a href="#professional">ПРОФЕССИОНАЛЬНЫЙ УРОВЕНЬ</a></li>
+                <li><a href="#cooperation">СОТРУДНИЧЕСТВО</a></li>
+                <li><a href="#galery">ГАЛЕРЕЯ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="main">
+    <div class="main" id="main">
         <div class="mainBlock">
             <div class="mainBlock_left">
                 <div class="mainBlock_left__title">
@@ -46,9 +47,9 @@
                     </ul>
                 </div>
 
-                <div class="mainBlock_left__button">
+                <a href="#contacts" class="mainBlock_left__button">
                     Связаться со мной
-                </div>
+                </a>
 
             </div>
 
@@ -58,7 +59,7 @@
         </div>
     </div>
 
-    <div class="advantagesWorkingWithMe_section changeData">
+    <div class="advantagesWorkingWithMe_section changeData" id="events">
         <h1>Мероприятия</h1>
     </div>
 
@@ -177,7 +178,7 @@
         </div>
     </div>
 
-    <section class="professional-level_section">
+    <section class="professional-level_section" id="professional">
         <div class="professional-level_section_left">
             <h1>ПРОФЕССИОНАЛЬНЫЙ <span>УРОВЕНЬ</span></h1>
 
@@ -220,7 +221,7 @@
 
     </section>
 
-    <section class="advantagesWorkingWithMe_section">
+    <section class="advantagesWorkingWithMe_section" id="cooperation">
         <h1>ПРЕИМУЩЕСТВА СОТРУДНИЧЕСТВО СО МНОЙ</h1>
 
         <div class="advantagesWorkingWithMe_section_table">
@@ -266,7 +267,7 @@
         </div>
     </section>
 
-    <div class="myGallery">
+    <div class="myGallery" id="galery">
         <div class="advantagesWorkingWithMe_section changeData">
             <h1>Галерея</h1>
         </div>
@@ -318,24 +319,26 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <section class="contacts_section">
+    <section class="contacts_section" id="contacts">
         <h1>Контакты</h1>
-        <p class="phone"><img src="img/call.svg" alt="">+7-928-658-6111</p>
-        <p class="mail"><img src="img/mail.svg" alt="">dzugov@internet.ru</p>
+        <p class="phone">
+            <img src="img/call.svg" alt="">
+            <a href="tel:+79286586111">+7-928-658-6111</a>
+        </p>
+        <p class="mail">
+            <img src="img/mail.svg" alt="">
+            <a href="mailto:example@example.com">dzugov@internet.ru</a>
+        </p>
 
-        <div class="goToVK">
+        <a href="https://vk.com/primetime09" target="_blank" class="goToVK">
             Перейти в ВК
-        </div>
+        </a>
 
     </section>
 
     <div class="footer">
         <div class="footer_left">
-            <ul>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Согласие на обработку персональных данных</a></li>
-                <li><a href="#">Контактный номер 8000000000</a></li>
-            </ul>
+            Амиран Дзугов © 2023
         </div>
         <div class="footer_right">
             <div class="footer_right__img">
@@ -351,6 +354,24 @@
     <script src="js/galery.js"></script>
     <script src="js/slider.js"></script>
     <script src="edit.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function changeHeaderColor() {
+                var scrollPosition = window.scrollY;
+
+                // Условие для изменения цвета хидера
+                if (scrollPosition > 80) {
+                    $("header").css("background-color", "#000");
+                } else {
+                    $("header").css("background-color", "transparent");
+                }
+            }
+
+            // Добавляем слушатель события скролла
+            window.addEventListener("scroll", changeHeaderColor);
+        });
+    </script>
 </body>
 
 </html>

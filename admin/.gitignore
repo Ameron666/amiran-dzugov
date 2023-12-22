@@ -1,2 +1,2 @@
-# img/*
-# !img/icons/
+img/*
+!img/icons/
